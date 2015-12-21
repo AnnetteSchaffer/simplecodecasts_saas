@@ -1,0 +1,15 @@
+<!-- /.navbar-collapse <h1>Contacts#index</h1>
+#<p>Find me in app/views/contacts/index.html.erb</p> -->
+<div class="row">
+ <%=form_for @contact do |f| %>
+     <%=f.label :name %>
+     <%=f.text_field :name %>
+     
+     <%=f.label :email%>
+     <%=f.email_field :email %>
+     
+     <%=f.label :comments %>
+     <%=f.text_area :comments %>
+ <% end %>
+</div>
+
